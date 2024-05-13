@@ -28,7 +28,7 @@ namespace LeetCode.Test
         public void IsPalindromeTest_MultipleDigit()
         {
             var solution = new _009_PalindromeNumber();
-            var result = solution.IsPalindrome(11);
+            var result = solution.IsPalindrome(112211);
             Assert.IsTrue(result);
 
             result = solution.IsPalindrome(121);

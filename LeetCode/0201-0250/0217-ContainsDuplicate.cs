@@ -20,5 +20,18 @@ namespace LeetCode
             }
             return false;
         }
+
+        public bool ContainsDuplicate_new(int[] nums)
+        {
+            var list = new List<int>();
+
+            foreach (var n in nums)
+            {
+                if (list.Contains(n)) return true;
+                list.Add(n);
+            }
+
+            return false;
+        }
     }
 }
